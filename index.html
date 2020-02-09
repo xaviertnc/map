@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Gopix</title>
+    <link href="favicon.ico" rel="shortcut icon">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+
+  <body>
+
+    <div id="page">
+
+      <h1 class="title">Map Editor v0.1</h1>
+
+      <main id="main-view"></main>
+
+      <footer>
+
+        <div class="actionbar">
+          <button id="start" onclick="NM.engine.start()" type="button">Start</button>
+          <button id="restart" onclick="NM.engine.restart()" type="button">Restart</button>
+          <button id="stop"  onclick="NM.engine.stop()"  type="button" disabled>Stop</button>
+        </div>
+
+        <div id="debug-pane"></div>
+
+      </footer>
+
+
+    </div>
+
+    <script src="lib/lib.js"></script>
+    <script src="lib/input.js"></script>
+    <script src="lib/engine.js"></script>
+    <script src="lib/animate.js"></script>
+    <script src="lib/entity.js"></script>
+    <script src="lib/sprite.js"></script>
+    <script src="lib/view.js"></script>
+    <script src="lib/npc.js"></script>
+
+    <script src="src/mapitem.js"></script>
+    <script src="src/map.js"></script>
+    <script src="src/app.js"></script>
+
+    <script src="config.js"></script>
+    <script src="main.js"></script>
+
+  </body>
+
+</html>

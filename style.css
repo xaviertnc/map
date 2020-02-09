@@ -1,0 +1,79 @@
+body {
+  background: #222;
+  color: darkkhaki;
+  font-size: 14px;
+  font-family: 'sans-serif';
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  padding: 1em;
+}
+
+#main-view {
+  position: relative;
+  height: 80vh;
+}
+
+#restart {
+  background: red;
+  color:white;
+}
+
+.title {
+  position: absolute;
+  top: 0;
+  right: 2%;
+  z-index: 50;
+  line-height: 0.8em;
+}
+
+.MapItem {
+  border: 1px solid transparent;
+  position: absolute;
+  cursor: pointer;
+}
+
+.Vermaak {
+  background-color: crimson;
+}
+
+.Onderwys {
+  background-color: dodgerblue;
+}
+
+.Kos {
+  background-color: gold;
+}
+
+.booked {
+  border-color: chartreuse;
+}
+
+.booked::before {
+  content: 'x';
+  position: absolute;
+  line-height: 0.5;
+}
+
+.actionbar {
+  float: right;
+}
+
+.actionbar button {
+  margin-left: 0.67em;
+  padding: 0.3em 0.5em;
+}
+
+.flipH {
+  transform: scaleX(-1);
+  filter: flipH;
+  -ms-filter: "FlipH";
+}
+
+.flipV {
+  transform: scaleY(-1);
+  filter: flipV;
+  -ms-filter: "FlipV";
+}
