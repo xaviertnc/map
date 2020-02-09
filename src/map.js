@@ -10,4 +10,13 @@
 class Map extends View {
 
 
+  addItem(mapItemDef) {
+
+    const mapItem = new MapItem('item-' + this.nextId++, this, mapItemDef)
+
+    this.addChild(mapItem);
+
+  }
+
+
 } // End: Map Class

@@ -20,14 +20,14 @@ class App {
       const map = new Map('map', this);
 
       this.unplacedItems = [
-        new MapItem('item-' + this.nextId++, this, { standType: 'Tema'  , booked: false, x: 10 , y: 10  }),
-        new MapItem('item-' + this.nextId++, this, { standType: 'Tema'  , booked: false, x: 100, y: 100 }),
-        new MapItem('item-' + this.nextId++, this, { standType: 'Junior', booked: true , x: 150, y: 200 })
+        { standType: 'Tema'  , booked: false, x: 10 , y: 10  },
+        { standType: 'Tema'  , booked: false, x: 100, y: 100 },
+        { standType: 'Junior', booked: true , x: 150, y: 200 }
       ];
 
-      map.addChild(new MapItem('item-' + this.nextId++, map, { standType: 'Vermaak' , booked: false, x: 150, y: 200 }));
-      map.addChild(new MapItem('item-' + this.nextId++, map, { standType: 'Kos'     , booked: true , x: 160, y: 220 }));
-      map.addChild(new MapItem('item-' + this.nextId++, map, { standType: 'Onderwys', booked: false, x: 170, y: 240 }));
+      map.addItem({ standType: 'Vermaak' , booked: false, x: 150, y: 200 });
+      map.addItem({ standType: 'Kos'     , booked: true , x: 160, y: 220 });
+      map.addItem({ standType: 'Onderwys', booked: false, x: 170, y: 240 });
 
       this.map = map;
 
